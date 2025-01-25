@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { SwiperComponent } from './components/swiper/swiper.component';
 import { WhatsappButtonComponent } from './components/whatsapp-button/whatsapp-button.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, SwiperComponent, WhatsappButtonComponent],
+  imports: [RouterOutlet, HeaderComponent, SwiperComponent, WhatsappButtonComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
