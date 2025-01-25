@@ -11,23 +11,51 @@
     gap: 20px;
     padding: 10px; 
 
+    .header-logo {
+        height: 100%;
+    }
+
     .header-buttons{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
 
         .header-button{
             border: 0px;
             outline: 0px;
             background: none;
-            font-size: 18px;
+            font-size: 16px;
             padding: 10px;
             font-family: $primary-font-family;
-
+            color: #80715f;
+            transition: border 0.1s, padding 0.1s;
+            
             &:hover{
-                color: #916c42;
+                color: #d1b89a;
                 cursor: pointer;
+                border-bottom: 3px solid #d1b89a;
+                padding-bottom: 7px;
+            }
+        }
+        
+        
+        .header-button-avaliacao{
+            border: 0px;
+            outline: 0px;
+            background: none;
+            font-size: 16px;
+            padding: 10px;
+            font-family: $primary-font-family;
+            border: 1px solid;
+            border-radius: 1000px;
+            color: #80715f;
+            transition: border 0.1s, padding 0.3s, margin 0.3s;
+            
+            &:hover{
+                color: #d1b89a;
+                cursor: pointer;
+                margin-bottom: 9px;
             }
         }
     }
