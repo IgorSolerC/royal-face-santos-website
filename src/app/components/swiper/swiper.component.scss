@@ -1,0 +1,25 @@
+
+.swiper-img-div {
+    height: 300px;
+}
+
+.fill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+
+/* Cover whole div */
+// .fill img {
+//     flex-shrink: 0;
+//     min-width: 100%;
+//     min-height: 100%
+// }
+
+/* Fit whole image */
+.fill img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
