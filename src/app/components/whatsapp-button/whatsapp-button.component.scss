@@ -1,0 +1,19 @@
+.whatsapp-button-container{
+    background-color: rgb(36, 204, 99);
+    border-radius: 1000px;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 4px 10px 0px #00000030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    i {
+        font-size: 45px;
+        color: white;
+    }
+}

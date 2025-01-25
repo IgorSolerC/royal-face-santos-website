@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -7,9 +7,9 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterOutlet],
   templateUrl: './swiper.component.html', 
-  styleUrl: './swiper.component.scss',
+  styleUrls: ['./swiper.component.scss'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA], 
 })
 export class SwiperComponent {
-
+  @Input() images: string[] = [];
 }

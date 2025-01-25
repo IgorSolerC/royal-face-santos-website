@@ -1,4 +1,30 @@
-<app-header></app-header>
-<app-swiper></app-swiper>
+<app-header/>
+<app-whatsapp-button/>
 
-<router-outlet />
+<app-swiper
+  [images]="
+    [
+      'images/banner1.png',
+      'images/banner2.png',
+    ]
+  "
+/>
+
+<div class="card-informativo">
+  <div class="card-informativo-inner">
+    <h1>
+      Royal Face Santos
+    </h1>
+    <h3>
+      Realce sua beleza na maior e melhor rede de harmonização facial do Brasil!
+    </h3>
+    <p>
+      Somos especialistas em harmonização facial, mas mais do que isso, somos idealizadores, sonhadores e realizadores.
+    </p>
+    <p>
+      A harmonização facial é um tratamento estético que utiliza uma combinação de técnicas e procedimentos não cirúrgicos. O propósito da harmonização facial é proporcionar mais equilíbrio entre o volume, o formato e o ângulo de todas as partes do rosto, além de tratar os sinais de envelhecimento, promovendo o rejuvenescimento.
+    </p>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
